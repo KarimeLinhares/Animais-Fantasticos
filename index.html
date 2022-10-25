@@ -4,8 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Projeto Animais Fantásticos</title>
   <link rel="stylesheet" href="css/style.css"/>
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- em caso de usuários com JS desabilitado, previne que o conteúdo da lista de animais não seja carregado -->
+  <script>document.documentElement.className += ' js';</script>
+
 </head>
 <body>
   <!-- navbar -->
@@ -14,14 +23,14 @@
       <li><a href="#animais">Animais</a></li>
       <li><a href="#faq">Faq</a></li>
       <li><a href="#contato">Contato</a></li>
-      <li><a href="https://github.com/KarimeLinhares">Dev ►</a></li>
+      <li><a href="https://github.com/KarimeLinhares" target="_blank">Dev ►</a></li>
     </ul>
   </nav>
 
   <section class="grid-section animais" id="animais">
     <!-- lista de animais e o titulo -->
     <h1 class="titulo">Animais Fantásticos</h1>
-    <ul class="animais-lista">
+    <ul class="animais-lista js-tabmenu">
       <li>
         <img src="img/imagem1.jpg">
       </li>
@@ -42,7 +51,7 @@
       </li>
     </ul>
     <!-- nomes dos animais e informações -->
-    <div class="animais-descricao">
+    <div class="animais-descricao js-tabcontent">
       <section>
         <h2>Guepardo</h2>
         <p>O guepardo ou chita (Acinonyx jubatus) é um animal da família dos felídeos (Felidae), ainda que de comportamento atípico, se comparado com outros da mesma família.</p> 
@@ -153,6 +162,6 @@
     <p>Todos os direitos reservados</p>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
