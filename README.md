@@ -11,3 +11,5 @@
 1.3 - Adicionado scroll suave aos links internos do navegador.
 
 1.4 - Adicionado animação as seções durante o scroll de tela.
+
+1.5 - Adicionado Dataset ao projeto
