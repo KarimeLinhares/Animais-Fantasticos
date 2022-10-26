@@ -239,7 +239,9 @@ body {
   color: #000000
 }
 
+
 /* NAVEGAÇÃO DA LISTA DE ANIMAIS */
+
 
 /* some o conteúdo */
 .js .js-tabcontent section {
@@ -263,6 +265,47 @@ body {
     transform: translate3d(0, 0, 0);
   }
 }
+
+
+/* ACCORDION LIST */
+
+
+/* some o conteúdo das descrições */
+.js .js-accordion dd {
+  display: none;
+}
+
+/* adiciona as setas dos tópicos */
+.js-accordion dt::after {
+  content: '▼';
+  margin-left: 10px;
+}
+
+/* muda a seta para cima quando a classe 'active' for adicionada */
+.js-accordion dt.active::after {
+  content: '▲';
+  margin-left: 10px;
+}
+
+/* mostra as descrições quando a classe 'active' for adicionada */
+.js-accordion dd.active {
+  display: block;
+  animation: slideDown .5s forwards;
+}
+
+/* animações */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    max-height: 200px;
+    opacity: 1;
+  }
+}
+
+
 
 /* MEDIAQUERY */
 
