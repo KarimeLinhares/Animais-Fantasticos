@@ -6,6 +6,8 @@
 
 1.0.0 - Criada estilização, e iniciado as animações da lista de animais e descrições.
 
-1.2 - Adicionado estilo acordeão aos itens do FAQ
+1.2 - Adicionado estilo acordeão aos itens do FAQ.
 
-1.3 - Adicionado scroll suave aos links internos do navegador (não funciona em todos os browsers 😥)
+1.3 - Adicionado scroll suave aos links internos do navegador.
+
+1.4 - Adicionado animação as seções durante o scroll de tela.
