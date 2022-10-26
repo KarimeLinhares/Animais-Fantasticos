@@ -1,8 +1,8 @@
 // função de navegação da lista de animais
 function initTabNav() {
   //seleciona as classes tabMenu e tabContent da lista de animais e sections da lista de descrições(1)
-  const tabMenu = document.querySelectorAll('.js-tabmenu li');
-  const tabContent = document.querySelectorAll('.js-tabcontent section');
+  const tabMenu = document.querySelectorAll('[data-tab="menu"] li');
+  const tabContent = document.querySelectorAll('[data-tab="content"] section');
 
   //TESTE(5)
   //se houver itens na tabMenu e/ou tabContent o código vai acontecer
@@ -16,7 +16,8 @@ function initTabNav() {
       tabContent.forEach((section) => {
         section.classList.remove('active');
       });
-      tabContent[index].classList.add('active');
+      const direction = tabContent[index].dataset.anime;
+      tabContent[index].classList.add('active', direction);
     }
 
     //loop em que, para cada item da lista de animais, ao acontecer o evento de 'click', será adicionado a class 'active' a cada um dos itens que forem ativados(3)
@@ -33,7 +34,7 @@ initTabNav();
 // função da lista do FAQ
 function initAccordion() {
   //seleciona os tópicos do FAQ(1)
-  const accordionList = document.querySelectorAll('.js-accordion dt');
+  const accordionList = document.querySelectorAll('[data-anime="accordion"] dt');
   //constante de ativação
   const activeClass = 'active';
 
@@ -62,7 +63,7 @@ initAccordion();
 //função do scroll suave
 function initScroll() {
   //seleciona todos os links internos(1)
-  const innerLinks = document.querySelectorAll('.js-menu a[href^="#"]');
+  const innerLinks = document.querySelectorAll('[data-menu="suave"] a[href^="#"]');
 
   //função que linka o item do navegador com a sua seção(3)
   function scrollToSection(event) {
@@ -88,7 +89,7 @@ initScroll();
 //função de animação das seções durante o scroll
 function initAnimeScroll() {
   //seleciona as sections com 'js-scroll'(1)
-  const sections = document.querySelectorAll('.js-scroll');
+  const sections = document.querySelectorAll('[data-anime="scroll"]');
 
   // TESTE(5)
   //se houver itens na sections, o código vai funcionar

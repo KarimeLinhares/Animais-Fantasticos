@@ -18,7 +18,7 @@
 </head>
 <body>
   <!-- navbar -->
-  <nav class="menu js-menu">
+  <nav class="menu" data-menu="suave">
     <ul>
       <li><a href="#animais">Animais</a></li>
       <li><a href="#faq">Faq</a></li>
@@ -27,10 +27,10 @@
     </ul>
   </nav>
 
-  <section class="grid-section animais js-scroll" id="animais">
+  <section class="grid-section animais" data-anime="scroll" id="animais">
     <!-- lista de animais e o titulo -->
     <h1 class="titulo">Animais Fantásticos</h1>
-    <ul class="animais-lista js-tabmenu">
+    <ul class="animais-lista" data-tab="menu">
       <li>
         <img src="img/imagem1.jpg">
       </li>
@@ -51,8 +51,8 @@
       </li>
     </ul>
     <!-- nomes dos animais e informações -->
-    <div class="animais-descricao js-tabcontent">
-      <section>
+    <div class="animais-descricao" data-tab="content">
+      <section data-anime="show-right">
         <h2>Guepardo</h2>
         <p>O guepardo ou chita (Acinonyx jubatus) é um animal da família dos felídeos (Felidae), ainda que de comportamento atípico, se comparado com outros da mesma família.</p> 
         <p>É a única espécie vivente do gênero Acinonyx.</p>
@@ -65,7 +65,7 @@
         <p>Consegue atingir velocidades de 115 km/h, por curtos períodos de cada vez (até 500 metros de corrida), sendo o mais rápido de todos os animais terrestres.</p>
       </section>
 
-      <section>
+      <section data-anime="show-right">
         <h2>Tigre</h2>
         <p>O tigre (nome científico: Panthera tigris) é um mamífero carnívoro da família dos felídeos, que habita o continente asiático.</p> 
         <p>Dentre suas subespécies é o maior entre todos os felinos selvagens do mundo.</p> 
@@ -81,7 +81,7 @@
         <p>É um dos animais mais carismáticos do mundo, sendo símbolo da conservação da natureza e um dos animais mais populares. É o animal símbolo de diversos países da Ásia e mascote de diversas empresas em todo o mundo.</p>
       </section>
 
-      <section>
+      <section data-anime="show-right">
         <h2>Urso Polar</h2>
         <p>O urso-polar (nome científico: Ursus maritimus), também conhecido como urso-branco, é uma espécie de mamífero carnívoro da família Ursidae encontrada no círculo polar Ártico.</p> 
         <p>Ele é o maior carnívoro terrestre conhecido e também o maior urso, juntamente com o urso-de-kodiak, que tem aproximadamente o mesmo tamanho.</p> 
@@ -91,7 +91,7 @@
         <p>Por centenas de anos, o urso-polar tem sido uma figura chave na vida cultural, espiritual e material dos povos indígenas do Ártico, aparecendo em muitas lendas e contos desses povos.</p>
       </section>
 
-      <section>
+      <section data-anime="show-right">
         <h2>Pinguim</h2>
         <p>O pinguim (RO 1971: pingüim) é uma ave da família Spheniscidae, altamente modificadas para a uma vida aquática, sendo suas asas adaptadas para promover impulso através da água.</p>
         <p>Essas aves estão amplamente distribuídas pelas águas mais frias do hemisfério sul, especialmente na Antártida e ilhas dos mares austrais, chegado à Terra do Fogo, Ilhas Malvinas e África do Sul, entre outros.</p>
@@ -106,13 +106,13 @@
         <p>É uma ave marinha e nadadora, chegando a nadar com uma velocidade de até 45 km/h, passando a maior parte do tempo na água.</p>
       </section>
 
-      <section>
+      <section data-anime="show-right">
         <h2>Flamingo</h2>
         <p>Flamingo é uma ave pertencente à família Phoenicopteridae da ordem Phoenicopteriformes. Anteriormente pertencia a ordem Ciconiiformes. Tradicionalmente todas as espécies eram incluídas no género Phoenicopteruss, mas actualmente o flamingo-andino e o flamingo-de-james são considerados um gênero à parte, Phoenicoparrus, por causa de certas diferenças no bico, e o flamingo-pequeno também foi incluído no seu próprio género, Phoeniconaias.</p>
         <p>Os flamingos são aves gregárias, que vivem em bandos numerosos junto a zonas aquáticas. Algumas espécies conseguem inclusivamente habitar zonas de salinidade extrema, como os lagos africanos do Vale do Rift. É a ave nacional das Bahamas.</p>
       </section>
 
-      <section>
+      <section data-anime="show-right">
         <h2>Panda Gigante</h2>
         <p>O panda-gigante (nome científico: Ailuropoda melanoleuca, do grego: ailuros, gato + poda, pés; e melano, preto + leukos, branco) é um mamífero omnívoro da família Ursidae endêmico da República Popular da China.</p>
         <p>O panda-gigante é um mamífero de cor preto e branco que come bambu (folhas). A pelagem é grossa e lanosa para suportar as baixas temperaturas no ambiente subalpino em que vive.</p>
@@ -126,9 +126,9 @@
   </section>
 
   <!-- seção do faq -->
-  <section class="grid-section faq js-scroll" id="faq">
+  <section class="grid-section faq" data-anime="scroll" id="faq">
     <h1 class="titulo">FAQ</h1>
-    <dl class="faq-lista js-accordion">
+    <dl class="faq-lista" data-anime="accordion">
       <!-- tópicos e descrições -->
       <dt>Porque alguns animais estão a extinguir-se?</dt>
       <dd>Caça e caça furtiva. Não há comida ou presa suficiente. E talvez o mais importante, a perda de habitat devido à desflorestação e degradação das florestas - em grande parte infligida pelos humanos à medida que nos expandimos para os últimos lugares selvagens e florestas intactas no nosso planeta. Além disso, as alterações climáticas também desempenharam o seu papel: o aumento das temperaturas significa que as plantas já não podem crescer onde outrora puderam, pelo que muitas criaturas precisam de novas casas.</dd>
@@ -145,7 +145,7 @@
   </section>
 
   <!-- seção de contato -->
-  <section class="grid-section contato js-scroll" id="contato">
+  <section class="grid-section contato" data-anime="scroll" id="contato">
     <h1 class="titulo">Contato</h1>
     <div class="mapa">
       <img src="img/mapa.png">
