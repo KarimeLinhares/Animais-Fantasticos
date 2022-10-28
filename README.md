@@ -16,3 +16,5 @@
 1.5 - Adicionado Dataset ao projeto
 
 1.6 - Adicionado Type Modules
+
+1.7 - Adicionado Modal de Login (HTML e CSS)
