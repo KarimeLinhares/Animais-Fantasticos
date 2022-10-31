@@ -15,7 +15,7 @@
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-  <!-- em caso de usuários com JS desabilitado, previne que o conteúdo da lista de animais não seja carregado -->
+  <!-- em caso de usuários com JS desabilitado, previne que os conteúdos com JS não sejam carregados -->
   <script>document.documentElement.className += ' js';</script>
 
 </head>
@@ -25,13 +25,25 @@
     <nav class="menu" data-menu="suave">
       <ul>
         <li><a href="#animais">Animais</a></li>
+        
+        <!-- menu dropdown -->
+        <li data-dropdown>
+          <a href="sobre.html">Sobre</a>
+          <ul class="dropdown-menu">
+            <li><a href="empresa.html">A Empresa</a></li>
+            <li><a href="equipe.html">A Equipe</a></li>
+            <li><a href="socios.html">Os Sócios</a></li>
+            <li><a href="investidores.html">Investidores</a></li>
+          </ul>
+        </li>
+
         <li><a href="#faq">Faq</a></li>
         <li><a href="#contato">Contato</a></li>
-        <li><a data-modal="open" href="login.html">Login<i class="fa-solid fa-user"></i></a></li>
+        <li><a href="https://github.com/KarimeLinhares" target="_blank">Dev ►</a></li>
         <li></li>
       </ul>
       <ul>
-        <li><a href="https://github.com/KarimeLinhares" target="_blank">Dev ►</a></li>
+        <li><a data-modal="open" href="login.html">Login<i class="fa-solid fa-user"></i></a></li>
       </ul>
     </nav>
 
