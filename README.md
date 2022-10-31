@@ -1,6 +1,7 @@
 # Animais Fantásticos 🐱‍💻
 
-![image](https://user-images.githubusercontent.com/89994391/198598717-26043407-0e76-470f-8f4c-68d5b8655679.png)
+![image](https://user-images.githubusercontent.com/89994391/199022942-ba8bc604-6086-4957-b985-80a6c871fb5b.png)
+
 
 
 ## 🦄 Versions
@@ -18,3 +19,5 @@
 1.6 - Adicionado Type Modules
 
 1.7 - Adicionado Modal de Login (HTML e CSS)
+
+1.8 - Adicionado animações ao modal de login, e botões para abrir e fechar o modal
