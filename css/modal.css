@@ -7,9 +7,14 @@
   top: 0;
   left: 0;
   z-index: 2000;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
+}
+
+/* na presença da classe 'active' o modal aparece */
+.modal-container.active {
+  display:flex;
 }
 
 /* caixa de login */
@@ -66,4 +71,20 @@
   font-family: 'Josefin Sans', sans-serif;
   margin-top: 1rem;
   font-weight: bold;
+}
+
+/* Animações */
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.active .modal {
+  animation: modal .3s forwards;
 }
