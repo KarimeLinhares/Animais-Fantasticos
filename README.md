@@ -15,6 +15,12 @@
 ## Tooltip
 ![image](https://user-images.githubusercontent.com/89994391/199058694-71ee3395-0de1-4a63-8ba0-12a8e76a3fda.png)
 
+## Horário de Funcionamento
+![image](https://user-images.githubusercontent.com/89994391/199334651-73a946ac-6b7d-403b-bebb-6a4a2e5f426c.png)
+![image](https://user-images.githubusercontent.com/89994391/199334770-c7ca0f19-be85-4bd9-870a-e0a01ea07b99.png)
+
+
+
 ## 🦄 Versions
 
 1.0.0 - Criada estilização, e iniciado as animações da lista de animais e descrições.
@@ -38,3 +44,5 @@
 2.0 - Adicionado Menu Mobile
 
 2.1 - Adicionado seção Números, com animação dos números em JavaScript
+
+2.2 - Adicionado horário de funcionamento, usando Dataset
