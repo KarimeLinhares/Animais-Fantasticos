@@ -1,12 +1,16 @@
 # Animais Fantásticos 🐱‍💻
 
-![image](https://user-images.githubusercontent.com/89994391/199022942-ba8bc604-6086-4957-b985-80a6c871fb5b.png)
+![image](https://user-images.githubusercontent.com/89994391/199313534-f20c7bf7-dae9-4cee-9634-2c4599396e5d.png)
+
+## Modal Login
+![image](https://user-images.githubusercontent.com/89994391/199313684-1f0d6119-cfd5-4296-aa8f-c363d7300d36.png)
+
+## Menu Mobile
+![image](https://user-images.githubusercontent.com/89994391/199314029-14020d99-05fb-4dc9-b6ee-c780bbbded16.png)
+![image](https://user-images.githubusercontent.com/89994391/199313923-1222e204-744f-4ecf-bb82-b23682af80a1.png)
 
 ## Tooltip
 ![image](https://user-images.githubusercontent.com/89994391/199058694-71ee3395-0de1-4a63-8ba0-12a8e76a3fda.png)
-
-
-
 
 ## 🦄 Versions
 
@@ -27,3 +31,5 @@
 1.8 - Adicionado animações ao modal de login, e botões para abrir e fechar o modal
 
 1.9 - Adicionado Tooltip à imagem do mapa, na área de contato
+
+2.0 - Adicionado Menu Mobile
