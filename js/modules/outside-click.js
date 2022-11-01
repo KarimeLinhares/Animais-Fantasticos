@@ -4,7 +4,9 @@ export default function outsideClick(element, events, callback) {
 
   if(!element.hasAttribute(outside)) {
     events.forEach(userEvent => {
-      html.addEventListener(userEvent, handleOutsideClick);
+
+      // impede que na fase de "bubble", que o listener seja ativo de imediato
+      setTimeout(() => html.addEventListener(userEvent, handleOutsideClick));
     })
     element.setAttribute(outside, '');
   }
