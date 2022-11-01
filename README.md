@@ -45,4 +45,4 @@
 
 2.1 - Adicionado seção Números, com animação dos números em JavaScript
 
-2.2 - Adicionado horário de funcionamento, usando Dataset
+2.2 - Adicionado horário de funcionamento, usando Date
