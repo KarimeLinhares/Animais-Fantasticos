@@ -19,6 +19,10 @@
 ![image](https://user-images.githubusercontent.com/89994391/199334651-73a946ac-6b7d-403b-bebb-6a4a2e5f426c.png)
 ![image](https://user-images.githubusercontent.com/89994391/199334770-c7ca0f19-be85-4bd9-870a-e0a01ea07b99.png)
 
+## Api bitcoins
+![image](https://user-images.githubusercontent.com/89994391/201678741-711675c6-895e-4372-945e-f735f0830378.png)
+
+
 
 
 ## 🦄 Versions
@@ -48,3 +52,5 @@
 2.2 - Adicionado horário de funcionamento, usando Date
 
 2.3 - Criado Api interna e utilizada na seção de números
+
+2.4 - Linkagem com API externa (https://blockchain.info/ticker) para compra de café em bitcoins
