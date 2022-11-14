@@ -337,6 +337,15 @@ body {
 
 }
 
+/* Buy-me a coffee style */
+
+.coffee {
+  background: #7A86B6;
+  padding: .2rem .5rem;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
 
 /* MEDIAQUERY */
 
