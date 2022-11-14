@@ -4,7 +4,8 @@
   "description": "![image](https://user-images.githubusercontent.com/89994391/199326923-8f4fc3fd-cbc1-49f4-bc91-6ec625887aac.png)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production ./js/script.js -o ./main.js",
+    "dev": "webpack --mode development --watch ./js/script.js -o ./main.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,8 @@
     "eslint": "^8.27.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0"
+    "eslint-plugin-import": "^2.26.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0"
   }
 }
