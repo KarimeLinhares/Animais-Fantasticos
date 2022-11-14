@@ -1,0 +1,26 @@
+[
+  {
+    "especie": "Guepardos",
+    "total": "7100"
+  },
+  {
+    "especie": "Tigres",
+    "total": "5578"
+  },
+  {
+    "especie": "Ursos Polares",
+    "total": "25000"
+  },
+  {
+    "especie": "Pinguins",
+    "total": "595000"
+  },
+  {
+    "especie": "Flamingos",
+    "total": "5578"
+  },
+  {
+    "especie": "Pandas",
+    "total": "1800"
+  }
+]
