@@ -46,3 +46,5 @@
 2.1 - Adicionado seção Números, com animação dos números em JavaScript
 
 2.2 - Adicionado horário de funcionamento, usando Date
+
+2.3 - Criado Api interna e utilizada na seção de números
