@@ -54,3 +54,5 @@
 2.3 - Criado Api interna e utilizada na seção de números
 
 2.4 - Linkagem com API externa (https://blockchain.info/ticker) para compra de café em bitcoins
+
+2.5 - Código tratado com eslint e prettier
