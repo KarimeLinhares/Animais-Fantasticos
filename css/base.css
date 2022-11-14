@@ -350,7 +350,7 @@ body {
 /* MEDIAQUERY */
 
 /* não deixa o site quebrar quando for menor que 700 pixels */
-@media (max-width: 800px) { 
+@media (max-width: 900px) { 
   
   /* abaixo de 700 pixels fica apenas 1 coluna */
   .grid-container {
