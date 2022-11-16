@@ -1,10 +1,10 @@
 import Scroll from "./modules/scroll.js";
 import Accordion from "./modules/accordion.js"
 import TabNav from "./modules/tab-nav.js";
+import Modal from "./modules/modal.js";
 
 
 import initAnimeScroll from "./modules/anime-scroll.js";
-import initModal from "./modules/modal.js";
 import initTooltip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
@@ -24,9 +24,11 @@ accordion.init();
 const tabnav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');
 tabnav.init();
 
+// inicializa o modal de login
+const modal = new Modal('[data-modal="open"]', '[data-modal="close"]', '[data-modal="container"]');
+modal.init();
 
 initAnimeScroll();
-initModal();
 initTooltip();
 initDropdownMenu();
 initMenuMobile();
