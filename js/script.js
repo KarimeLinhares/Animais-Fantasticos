@@ -1,4 +1,4 @@
-import initScroll from "./modules/scroll.js";
+import Scroll from "./modules/scroll.js";
 import initAnimeScroll from "./modules/anime-scroll.js";
 import initAccordion from "./modules/accordion.js"
 import initTabNav from "./modules/tab-nav.js";
@@ -10,8 +10,10 @@ import initSchedule from "./modules/schedules.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcoins from "./modules/fetch-bitcoins.js";
 
+// inicializa o scroll
+const scroll = new Scroll ('[data-menu="suave"] a[href^="#"]');
+scroll.init();
 
-initScroll();
 initAnimeScroll();
 initAccordion();
 initTabNav();
