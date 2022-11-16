@@ -1,30 +1,40 @@
-// função de navegação da lista de animais
-export default function initTabNav() {
+export default class TabNav {
+
+  // argumentos
+  constructor(menu, content) {
+
   // seleciona as classes tabMenu e tabContent da lista de animais e sections da lista de descrições(1)
-  const tabMenu = document.querySelectorAll('[data-tab="menu"] li');
-  const tabContent = document.querySelectorAll('[data-tab="content"] section');
+  this.tabMenu = document.querySelectorAll(menu);
+  this.tabContent = document.querySelectorAll(content);
 
-  // função que ativa e desativa as sections, adicionando e removendo a classe 'active'(2)
-  function activeTab(index) {
-    tabContent.forEach((section) => {
-      section.classList.remove('active');
-    });
-    const direction = tabContent[index].dataset.anime;
-    tabContent[index].classList.add('active', direction);
+  // classe de ativação
+  this.activeClass = 'active';
   }
 
-  // TESTE(5)
-  // se houver itens na tabMenu e/ou tabContent o código vai acontecer
-  if(tabMenu.length && tabContent.length) {
+  // método que ativa e desativa as sections, adicionando e removendo a classe 'active'(2)
+  activeTab(index) {
+    this.tabContent.forEach((section) => {
+      section.classList.remove(this.activeClass);
+    });
+    const direction = this.tabContent[index].dataset.anime;
+    this.tabContent[index].classList.add(this.activeClass, direction);
+  }
 
-    // faz com que o primeiro item da section sempre fique ativa ao iniciar a página, monstrando assim seu conteúdo mesmo não tendo sido clicado(4)
-    tabContent[0].classList.add('active');
-
+  // adiciona os eventos ao TabNav
+  addTabNavEvent() {
     // loop em que, para cada item da lista de animais, ao acontecer o evento de 'click', será adicionado a class 'active' a cada um dos itens que forem ativados(3)
-    tabMenu.forEach((itemMenu, index) => {
-      itemMenu.addEventListener('click', () => {
-        activeTab(index);
-      });
+    this.tabMenu.forEach((itemMenu, index) => {
+      itemMenu.addEventListener('click', () => this.activeTab(index));
     });
   }
+
+  init() {
+    // TESTE(5)
+    // se houver itens na tabMenu e/ou tabContent o código vai acontecer
+    if (this.tabMenu.length && this.tabContent.length) {
+      this.addTabNavEvent();
+      // faz com que o primeiro item da section sempre fique ativa ao iniciar a página, monstrando assim seu conteúdo mesmo não tendo sido clicado(4)
+      this.activeTab(0);
+    }
+  }  
 }
