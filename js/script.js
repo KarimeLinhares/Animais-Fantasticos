@@ -1,8 +1,9 @@
 import Scroll from "./modules/scroll.js";
 import Accordion from "./modules/accordion.js"
+import TabNav from "./modules/tab-nav.js";
+
 
 import initAnimeScroll from "./modules/anime-scroll.js";
-import initTabNav from "./modules/tab-nav.js";
 import initModal from "./modules/modal.js";
 import initTooltip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
@@ -19,9 +20,12 @@ scroll.init();
 const accordion = new Accordion('[data-anime="accordion"] dt');
 accordion.init();
 
+// inicializa o Tabnav
+const tabnav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');
+tabnav.init();
+
 
 initAnimeScroll();
-initTabNav();
 initModal();
 initTooltip();
 initDropdownMenu();
