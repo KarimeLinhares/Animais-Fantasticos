@@ -4,8 +4,8 @@
   "description": "![image](https://user-images.githubusercontent.com/89994391/199326923-8f4fc3fd-cbc1-49f4-bc91-6ec625887aac.png)",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production ./js/script.js -o ./main.js",
-    "dev": "webpack --mode development --watch ./js/script.js -o ./main.js"
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/KarimeLinhares/Animais-Fantasticos#readme",
   "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
     "eslint": "^8.27.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
