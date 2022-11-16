@@ -1,26 +1,37 @@
 // função da lista do FAQ
-export default function initAccordion() {
-  // seleciona os tópicos do FAQ(1)
-  const accordionList = document.querySelectorAll('[data-anime="accordion"] dt');
-  // constante de ativação
-  const activeClass = 'active';
+export default class Accordion {
 
+  // argumentos
+  constructor(list) {
+
+  // seleciona os tópicos do FAQ(1)
+  this.accordionList = document.querySelectorAll(list);
+
+  // constante de ativação
+  this.activeClass = 'active';
+  }
+  
   // função que adiciona a classe 'active' aos tópicos e descrições no evento de 'click'(3)
-  function activeAccordion() {
-    this.classList.toggle(activeClass);
-    this.nextElementSibling.classList.toggle(activeClass);
+  toggleAccordion(item) {
+    item.classList.toggle(this.activeClass);
+    item.nextElementSibling.classList.toggle(this.activeClass);
   }
 
+  // adiciona o evento do acordeão
+  addAccordionEvent() {
+    // adiciona evento de 'click',(2)
+    this.accordionList.forEach((item) => {
+      item.addEventListener('click', () => this.toggleAccordion(item));
+    });
+  }
+
+  init() {
   // TESTE(5)
   // Se houver itens no 'accordionList' a função será ativada
-  if(accordionList.length) {
+    if(this.accordionList.length) {
+      this.addAccordionEvent();
     // faz com que o primeiro tópico e descrição já fique ativo ao iniciar o código(4)
-    accordionList[0].classList.add(activeClass);
-    accordionList[0].nextElementSibling.classList.add(activeClass);
-
-    // adiciona evento de 'click',(2)
-    accordionList.forEach((item) => {
-      item.addEventListener('click', activeAccordion);
-    });
+    this.toggleAccordion(this.accordionList[0]);
+    }
   }
 }

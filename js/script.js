@@ -1,6 +1,7 @@
 import Scroll from "./modules/scroll.js";
+import Accordion from "./modules/accordion.js"
+
 import initAnimeScroll from "./modules/anime-scroll.js";
-import initAccordion from "./modules/accordion.js"
 import initTabNav from "./modules/tab-nav.js";
 import initModal from "./modules/modal.js";
 import initTooltip from "./modules/tooltip.js";
@@ -14,8 +15,12 @@ import initFetchBitcoins from "./modules/fetch-bitcoins.js";
 const scroll = new Scroll ('[data-menu="suave"] a[href^="#"]');
 scroll.init();
 
+// inicializa o acordeão
+const accordion = new Accordion('[data-anime="accordion"] dt');
+accordion.init();
+
+
 initAnimeScroll();
-initAccordion();
 initTabNav();
 initModal();
 initTooltip();
