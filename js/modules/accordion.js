@@ -33,5 +33,6 @@ export default class Accordion {
     // faz com que o primeiro tópico e descrição já fique ativo ao iniciar o código(4)
     this.toggleAccordion(this.accordionList[0]);
     }
+    return this;
   }
 }

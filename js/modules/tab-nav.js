@@ -36,5 +36,6 @@ export default class TabNav {
       // faz com que o primeiro item da section sempre fique ativa ao iniciar a página, monstrando assim seu conteúdo mesmo não tendo sido clicado(4)
       this.activeTab(0);
     }
+    return this;
   }  
 }
