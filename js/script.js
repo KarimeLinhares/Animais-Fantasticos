@@ -41,7 +41,7 @@ initDropdownMenu();
 initMenuMobile();
 initSchedule();
 
-FetchAnimais('../../animaisapi.json', '.numeros-grid')
+FetchAnimais('../animaisapi.json', '.numeros-grid')
 
 FetchBitcoins('https://blockchain.info/ticker', '.coffee');
 
