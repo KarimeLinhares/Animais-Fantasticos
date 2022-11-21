@@ -56,3 +56,17 @@
 2.4 - Linkagem com API externa (https://blockchain.info/ticker) para compra de café em bitcoins
 
 2.5 - Código tratado com eslint e prettier
+
+2.6 - Correção dos scripts
+
+2.7 - Animação do Scroll refatorado como classe
+
+2.8 - Instalação do Babel
+
+2.9 - Animação do FAQ refatorado como classe
+
+3.0 - Navegação refatorada como classe
+
+3.1 - Organização dos scripts
+
+3.2 -  Animação de tooltip refatorado como classe
