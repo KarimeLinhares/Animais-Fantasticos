@@ -1,32 +1,49 @@
 // função de animação das seções durante o scroll
-export default function initAnimeScroll() {
-  // seleciona as sections com 'js-scroll'(1)
-  const sections = document.querySelectorAll('[data-anime="scroll"]');
+export default class AnimeScroll {
+  
+  // argumentos
+  constructor(sections) {
+    // seleciona as sections com 'js-scroll'(1)
+    this.sections = document.querySelectorAll(sections);
 
-  // calcula o tamanho de 60% da tela
-  const halfWindow = window.innerHeight * 0.6;
-
-  // função que dispara o scroll(2)
-  function animeScroll() {
-    sections.forEach((section) => { 
-      const sectionTop = section.getBoundingClientRect().top; // pega a distância do topo de cada elemento
-      const isSectionVisible = (sectionTop - halfWindow) < 0; // calcula se a seção está visível na tela do browser, se for true, adiciona a classe 'active', se não, remove a classe 'active'
-      if(isSectionVisible) { 
-        section.classList.add('active');
-      } else {
-        section.classList.remove('active');
-      }
-    })
+    // calcula o tamanho de 60% da tela
+    this.windowMetade = window.innerHeight * 0.6;
+    this.checkDistance = this.checkDistance.bind(this);
   }
 
-  // TESTE(5)
-  // se houver itens na sections, o código vai funcionar
-  if(sections.length) {
+  // pega a distância de cada item em relação ao topo do site
+  getDistance() {
+    this.distance = [...this.sections].map((section) => {
+      const offset = section.offsetTop;
+      return {
+        element: section,
+        offset: Math.floor(offset - this.windowMetade),
+      };
+    });
+  }
 
-    // deixa a primeira seção ativada (4)
-    animeScroll();
+  // verifica a distância em cada objeto em relação ao scroll do site
+  checkDistance() {
+    this.distance.forEach((item) => {
+      if (window.pageYOffset > item.offset) {
+        item.element.classList.add('active');
+      } else if (item.element.classList.contains('active')) {
+        item.element.classList.remove('active');
+      }
+    });
+  }
 
-    // adiciona o evento no Scroll(3)
-    window.addEventListener('scroll', animeScroll);
+  init() {
+    if (this.sections.length) {
+      this.getDistance();
+      this.checkDistance();
+      window.addEventListener('scroll', this.checkDistance);
+    }
+    return this;
+  }
+
+  // remove o event de scroll
+  stop() {
+    window.removeEventListener('scroll', this.checkDistance);
   }
 }

@@ -5,12 +5,9 @@ import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
 import FetchAnimais from "./modules/fetch-animais.js";
 import FetchBitcoins from "./modules/fetch-bitcoins.js";
+import AnimeScroll from "./modules/anime-scroll.js";
 
 
-
-
-
-import initAnimeScroll from "./modules/anime-scroll.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initSchedule from "./modules/schedules.js";
@@ -35,7 +32,11 @@ modal.init();
 const tooltip = new Tooltip('[data-tooltip]');
 tooltip.init();
 
-initAnimeScroll();
+// inicializa animação de scroll
+const scrollAnima = new AnimeScroll('[data-anime="scroll"]');
+scrollAnima.init();
+
+
 initDropdownMenu();
 initMenuMobile();
 initSchedule();
