@@ -72,3 +72,5 @@
 3.2 -  Animação de tooltip refatorado como classe
 
 3.3 - Animação dos números de animais, refatorado como classe
+
+3.4 - Refatorado fetch animais e bitcoins
