@@ -2,10 +2,11 @@ import Scroll from "./modules/scroll.js";
 import Accordion from "./modules/accordion.js"
 import TabNav from "./modules/tab-nav.js";
 import Modal from "./modules/modal.js";
+import Tooltip from "./modules/tooltip.js";
+
 
 
 import initAnimeScroll from "./modules/anime-scroll.js";
-import initTooltip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initSchedule from "./modules/schedules.js";
@@ -28,8 +29,11 @@ tabnav.init();
 const modal = new Modal('[data-modal="open"]', '[data-modal="close"]', '[data-modal="container"]');
 modal.init();
 
+// inicializa o tooltip
+const tooltip = new Tooltip('[data-tooltip]');
+tooltip.init();
+
 initAnimeScroll();
-initTooltip();
 initDropdownMenu();
 initMenuMobile();
 initSchedule();
