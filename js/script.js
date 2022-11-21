@@ -3,14 +3,15 @@ import Accordion from "./modules/accordion.js"
 import TabNav from "./modules/tab-nav.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
-import FetchAnimais from "./modules/fetch-animais.js";
-import FetchBitcoins from "./modules/fetch-bitcoins.js";
 import AnimeScroll from "./modules/anime-scroll.js";
 
 
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initSchedule from "./modules/schedules.js";
+import initFetchAnimais from './modules/fetch-animais.js';
+import initFetchBitcoins from './modules/fetch-bitcoins.js';
+
 
 // inicializa o scroll
 const scroll = new Scroll ('[data-menu="suave"] a[href^="#"]');
@@ -40,8 +41,7 @@ scrollAnima.init();
 initDropdownMenu();
 initMenuMobile();
 initSchedule();
+initFetchAnimais();
+initFetchBitcoins();
 
-FetchAnimais('./animaisapi.json', '.numeros-grid')
-
-FetchBitcoins('https://blockchain.info/ticker', '.coffee');
 
