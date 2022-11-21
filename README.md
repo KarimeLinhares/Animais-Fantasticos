@@ -74,7 +74,9 @@
 3.3 - Animação dos números de animais, refatorado como classe
 
 3.4 - Refatorado fetch animais e bitcoins
+
 (fetch animais funcionando localmente)
+
 (to do: ver o porque fetch animais não está funcionando no github-pages)
 
 3.5 - Animação de scroll refatorado como classe
