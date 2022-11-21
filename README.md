@@ -70,3 +70,5 @@
 3.1 - Organização dos scripts
 
 3.2 -  Animação de tooltip refatorado como classe
+
+3.3 - Animação dos números de animais, refatorado como classe
