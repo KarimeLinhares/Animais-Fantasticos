@@ -3,6 +3,8 @@ import Accordion from "./modules/accordion.js"
 import TabNav from "./modules/tab-nav.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
+import FetchAnimais from "./modules/fetch-animais.js";
+
 
 
 
@@ -10,7 +12,6 @@ import initAnimeScroll from "./modules/anime-scroll.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initSchedule from "./modules/schedules.js";
-import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcoins from "./modules/fetch-bitcoins.js";
 
 // inicializa o scroll
@@ -37,5 +38,6 @@ initAnimeScroll();
 initDropdownMenu();
 initMenuMobile();
 initSchedule();
-initFetchAnimais();
 initFetchBitcoins();
+
+FetchAnimais('../../animaisapi.json', '.numeros-grid')
