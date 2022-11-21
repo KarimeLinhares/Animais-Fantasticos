@@ -74,3 +74,5 @@
 3.3 - Animação dos números de animais, refatorado como classe
 
 3.4 - Refatorado fetch animais e bitcoins
+
+3.5 - Animação de scroll refatorado como classe
