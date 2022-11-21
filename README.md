@@ -79,4 +79,6 @@
 
 3.5 - Animação de scroll refatorado como classe
 
-3.6 - Fix do fetch animais 
+3.6 - Fix do fetch animais
+
+3.7 - Fix do fetch bitcoins
