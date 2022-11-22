@@ -4,9 +4,9 @@ import TabNav from "./modules/tab-nav.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
 import AnimeScroll from "./modules/anime-scroll.js";
+import DropdownMenu from "./modules/dropdown-menu.js";
 
 
-import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initSchedule from "./modules/schedules.js";
 
@@ -38,8 +38,12 @@ tooltip.init();
 const scrollAnima = new AnimeScroll('[data-anime="scroll"]');
 scrollAnima.init();
 
+// inicializa o dropdown menu
+const dropdownMenu = new DropdownMenu('[data-dropdown]');
+dropdownMenu.init();
 
-initDropdownMenu();
+
+
 initMenuMobile();
 initSchedule();
 initFetchAnimais();
