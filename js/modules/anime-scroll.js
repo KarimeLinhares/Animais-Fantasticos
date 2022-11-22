@@ -1,3 +1,5 @@
+import debounce from "./debounce.js";
+
 // função de animação das seções durante o scroll
 export default class AnimeScroll {
   
@@ -8,7 +10,9 @@ export default class AnimeScroll {
 
     // calcula o tamanho de 60% da tela
     this.windowMetade = window.innerHeight * 0.6;
-    this.checkDistance = this.checkDistance.bind(this);
+
+    // o debounce evita que a animação de scroll seja ativada várias vezes de forma desnecessária
+    this.checkDistance = debounce(this.checkDistance.bind(this), 50);
   }
 
   // pega a distância de cada item em relação ao topo do site
