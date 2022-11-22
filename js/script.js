@@ -6,8 +6,7 @@ import Tooltip from "./modules/tooltip.js";
 import AnimeScroll from "./modules/anime-scroll.js";
 import DropdownMenu from "./modules/dropdown-menu.js";
 import MenuMobile from "./modules/menu-mobile.js";
-
-import initSchedule from "./modules/schedules.js";
+import Schedule from "./modules/schedules.js";
 
 import initFetchAnimais from './modules/fetch-animais.js';
 import initFetchBitcoin from './modules/fetch-bitcoins.js';
@@ -45,8 +44,13 @@ dropdownMenu.init();
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
 
+// inicializa o horário de funcionamento
+const funcionamento = new Schedule('[data-semana]', 'aberto');
+console.log(funcionamento);
+funcionamento.init();
 
-initSchedule();
+
+
 initFetchAnimais();
 initFetchBitcoin();
 
