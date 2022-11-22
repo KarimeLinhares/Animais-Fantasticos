@@ -69,7 +69,7 @@
 
 3.1 - Organização dos scripts
 
-3.2 -  Animação de tooltip refatorado como classe
+3.2 - Animação de tooltip refatorado como classe
 
 3.3 - Animação dos números de animais, refatorado como classe
 
@@ -82,3 +82,5 @@
 3.7 - Fix do fetch bitcoins
 
 3.8 - Adicionando debounce a animação de scroll
+
+3.9 - Dropdown Menu refatorado como classe
