@@ -75,10 +75,10 @@
 
 3.4 - Refatorado fetch animais e bitcoins
 
-(to do: ver o porque fetch animais não está funcionando no github-pages)
-
 3.5 - Animação de scroll refatorado como classe
 
 3.6 - Fix do fetch animais
 
 3.7 - Fix do fetch bitcoins
+
+3.8 - Adicionando debounce a animação de scroll
