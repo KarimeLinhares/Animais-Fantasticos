@@ -5,9 +5,8 @@ import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
 import AnimeScroll from "./modules/anime-scroll.js";
 import DropdownMenu from "./modules/dropdown-menu.js";
+import MenuMobile from "./modules/menu-mobile.js";
 
-
-import initMenuMobile from "./modules/menu-mobile.js";
 import initSchedule from "./modules/schedules.js";
 
 import initFetchAnimais from './modules/fetch-animais.js';
@@ -42,9 +41,11 @@ scrollAnima.init();
 const dropdownMenu = new DropdownMenu('[data-dropdown]');
 dropdownMenu.init();
 
+// inicializa o menu mobile
+const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
+menuMobile.init();
 
 
-initMenuMobile();
 initSchedule();
 initFetchAnimais();
 initFetchBitcoin();
