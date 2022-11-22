@@ -84,3 +84,5 @@
 3.8 - Adicionando debounce a animação de scroll
 
 3.9 - Dropdown Menu refatorado como classe
+
+4.0 - Menu mobile refatora como classe
