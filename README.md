@@ -86,3 +86,5 @@
 3.9 - Dropdown Menu refatorado como classe
 
 4.0 - Menu mobile refatora como classe
+
+4.1 - Horário de funcionamento refatorado como classe
