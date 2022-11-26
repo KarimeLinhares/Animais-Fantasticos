@@ -4,14 +4,14 @@ export default class Accordion {
   // argumentos
   constructor(list) {
 
-  // seleciona os tópicos do FAQ(1)
+  // seleciona os tópicos do FAQ
   this.accordionList = document.querySelectorAll(list);
 
   // constante de ativação
   this.activeClass = 'active';
   }
   
-  // função que adiciona a classe 'active' aos tópicos e descrições no evento de 'click'(3)
+  // função que adiciona a classe 'active' aos tópicos e descrições no evento de 'click'
   toggleAccordion(item) {
     item.classList.toggle(this.activeClass);
     item.nextElementSibling.classList.toggle(this.activeClass);
@@ -26,7 +26,7 @@ export default class Accordion {
   }
 
   init() {
-  // TESTE(5)
+  // TESTE
   // Se houver itens no 'accordionList' a função será ativada
     if(this.accordionList.length) {
       this.addAccordionEvent();

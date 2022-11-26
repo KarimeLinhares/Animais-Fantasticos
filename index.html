@@ -38,10 +38,11 @@
           </ul>
         </li>
 
-        <li><a href="#faq">Faq</a></li>
+        <li><a href="#carrossel">Galeria</a></li>
         <li><a href="#numeros">Números</a></li>
+        <li><a href="#faq">Faq</a></li>
         <li><a href="#contato">Contato</a></li>
-        <li><a href="https://github.com/KarimeLinhares" target="_blank">Dev ►</a></li>
+        <li><a href="https://github.com/KarimeLinhares" target="_blank">Dev <span class="arrow-black"></span></a></li>
         <li></li>
       </ul>
       <ul>
@@ -151,30 +152,41 @@
     </section>
 
     <!-- seção do carrossel -->
-    <section class="grid-section galeria" data-anime="scroll">
-      <ul class="custom-controls">
-        <li><img src="img/slide/foto1-thumb.jpg" alt=""></li>
-        <li><img src="img/slide/foto2-thumb.jpg" alt=""></li>
-        <li><img src="img/slide/foto3-thumb.jpg" alt=""></li>
-        <li><img src="img/slide/foto4.-thumb.jpg" alt=""></li>
-        <li><img src="img/slide/foto5-thumb.jpg" alt=""></li>
-        <li><img src="img/slide/foto6-thumb.jpg" alt=""></li>
-      </ul>
-      <div class="slide-wrapper">
-        <ul class="slide">
-          <li><img src="img/slide/foto1.jpg" alt=""></li>
-          <li><img src="img/slide/foto2.jpg" alt=""></li>
-          <li><img src="img/slide/foto3.jpg" alt=""></li>
-          <li><img src="img/slide/foto4.jpg" alt=""></li>
-          <li><img src="img/slide/foto5.jpg" alt=""></li>
-          <li><img src="img/slide/foto6.jpg" alt=""></li>
+    <section class="grid-section carrossel" data-anime="scroll" id="carrossel">
+      <h1 class="titulo">Galeria</h1>
+      <div class="grid-section galeria" data-anime="scroll" id="galeria">
+        <ul class="custom-controls">
+          <li><img src="img/slide/foto1-thumb.jpg" alt=""></li>
+          <li><img src="img/slide/foto2-thumb.jpg" alt=""></li>
+          <li><img src="img/slide/foto3-thumb.jpg" alt=""></li>
+          <li><img src="img/slide/foto4.-thumb.jpg" alt=""></li>
+          <li><img src="img/slide/foto5-thumb.jpg" alt=""></li>
+          <li><img src="img/slide/foto6-thumb.jpg" alt=""></li>
         </ul>
-      </div>
-      <div class="arrow-nav">
-        <button class="prev"></button>
-        <button class="next"></button>
+        <div class="slide-wrapper">
+          <ul class="slide">
+            <li><img src="img/slide/foto1.jpg" alt=""></li>
+            <li><img src="img/slide/foto2.jpg" alt=""></li>
+            <li><img src="img/slide/foto3.jpg" alt=""></li>
+            <li><img src="img/slide/foto4.jpg" alt=""></li>
+            <li><img src="img/slide/foto5.jpg" alt=""></li>
+            <li><img src="img/slide/foto6.jpg" alt=""></li>
+          </ul>
+        </div>
+        <div class="arrow-nav">
+          <button class="prev"></button>
+          <button class="next"></button>
+        </div>
       </div>
     </section>
+
+    <!-- seção de números de animais -->
+    <section class="grid-section numeros" data-anime="scroll" id="numeros">
+      <h1 class="titulo">Números</h1>
+      <div class="numeros-grid">
+    
+      </div>
+    </section>    
 
     <!-- seção do faq -->
     <section class="grid-section faq" data-anime="scroll" id="faq">
@@ -193,14 +205,6 @@
         <dt>Porque devemos diminuir a poluição do planeta?</dt>
         <dd>A poluição do meio ambiente é uma das principais causas da extinção de animais. Ao poluir, prejudicamos o meio ambiente natural dos animais e aumentamos o aquecimento global. Isso faz com que as condições climáticas da área onde a espécie vive se alterem. Portanto, devemos tentar ser limpos e respeitar o meio ambiente. A reciclagem está nas nossas mãos, assim como a escolha de alternativas mais ecológicas no nosso dia a dia.</dd>
       </dl>
-    </section>
-
-    <!-- seção de números de animais -->
-    <section class="grid-section numeros" data-anime="scroll" id="numeros">
-      <h1 class="titulo">Números</h1>
-      <div class="numeros-grid">
-    
-      </div>
     </section>
 
     <!-- seção de contato -->
@@ -227,7 +231,7 @@
   <!-- modal de login -->
   <section class="modal-container" data-modal="container">
     <div class="modal">
-      <button data-modal="close" class="close">X</button>
+      <button data-modal="close" class="close"></button>
       <form action="">
         <label for="email">Email</label>
         <input type="text" for="email" id="email">

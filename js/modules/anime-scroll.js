@@ -5,7 +5,7 @@ export default class AnimeScroll {
   
   // argumentos
   constructor(sections) {
-    // seleciona as sections com 'js-scroll'(1)
+    // seleciona as sections com 'js-scroll'
     this.sections = document.querySelectorAll(sections);
 
     // calcula o tamanho de 60% da tela

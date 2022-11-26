@@ -3,7 +3,7 @@ export default class TabNav {
   // argumentos
   constructor(menu, content) {
 
-  // seleciona as classes tabMenu e tabContent da lista de animais e sections da lista de descrições(1)
+  // seleciona as classes tabMenu e tabContent da lista de animais e sections da lista de descrições
   this.tabMenu = document.querySelectorAll(menu);
   this.tabContent = document.querySelectorAll(content);
 
@@ -11,7 +11,7 @@ export default class TabNav {
   this.activeClass = 'active';
   }
 
-  // método que ativa e desativa as sections, adicionando e removendo a classe 'active'(2)
+  // método que ativa e desativa as sections, adicionando e removendo a classe 'active'
   activeTab(index) {
     this.tabContent.forEach((section) => {
       section.classList.remove(this.activeClass);
@@ -22,14 +22,14 @@ export default class TabNav {
 
   // adiciona os eventos ao TabNav
   addTabNavEvent() {
-    // loop em que, para cada item da lista de animais, ao acontecer o evento de 'click', será adicionado a class 'active' a cada um dos itens que forem ativados(3)
+    // loop em que, para cada item da lista de animais, ao acontecer o evento de 'click', será adicionado a class 'active' a cada um dos itens que forem ativados
     this.tabMenu.forEach((itemMenu, index) => {
       itemMenu.addEventListener('click', () => this.activeTab(index));
     });
   }
 
   init() {
-    // TESTE(5)
+    // TESTE
     // se houver itens na tabMenu e/ou tabContent o código vai acontecer
     if (this.tabMenu.length && this.tabContent.length) {
       this.addTabNavEvent();

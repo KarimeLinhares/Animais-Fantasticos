@@ -2,13 +2,13 @@ export default class Modal {
 
   // argumentos
   constructor(openButton, closeButton, modalContainer) {
-    // selecionando o botão de abrir o modal(1)
+    // selecionando o botão de abrir o modal
     this.openButton = document.querySelector(openButton);
 
-    // selecionando o botão de fechar o modal(1)
+    // selecionando o botão de fechar o modal
     this.closeButton = document.querySelector(closeButton);
 
-    // selecionando o container do modal(1)
+    // selecionando o container do modal
     this.modalContainer = document.querySelector(modalContainer);
 
     // faz referência ao objeto da classe
@@ -16,7 +16,7 @@ export default class Modal {
     this.outModal = this.outModal.bind(this);
   }
 
-  // método de 'click' sobre o botão de Login, abre o modal, sobre o botão de fechar, fecha o modal(3)
+  // método de 'click' sobre o botão de Login, abre o modal, sobre o botão de fechar, fecha o modal
   toggleModal() {
     this.modalContainer.classList.toggle('active');
   }
@@ -27,7 +27,7 @@ export default class Modal {
     this.toggleModal();
   }
 
-  // método de fechar o modal ao clicar fora dele(4)
+  // método de fechar o modal ao clicar fora dele
   outModal(event) {
     if(event.target === this.modalContainer) { // verifica se o clique foi no container ou no modal
       this.toggleModal();
@@ -43,7 +43,7 @@ export default class Modal {
   }
 
   init() {
-    // TESTE(5)
+    // TESTE
     // Se os seletores existirem, o código vai funcionar
     if (this.openButton && this.closeButton && this.modalContainer) {
       this.addModalEvents();
