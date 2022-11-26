@@ -90,3 +90,5 @@
 4.1 - Horário de funcionamento refatorado como classe
 
 4.2 - Adicionado Galeria em formato de carrossel
+
+4.3 - Site finalizado
