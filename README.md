@@ -22,8 +22,8 @@
 ## Api bitcoins
 ![image](https://user-images.githubusercontent.com/89994391/201678741-711675c6-895e-4372-945e-f735f0830378.png)
 
-
-
+## Carrossel/ Galeria
+![image](https://user-images.githubusercontent.com/89994391/204097295-1ba042c4-de5e-4104-901b-a9ed14fd2add.png)
 
 ## 🦄 Versions
 
@@ -88,3 +88,5 @@
 4.0 - Menu mobile refatora como classe
 
 4.1 - Horário de funcionamento refatorado como classe
+
+4.2 - Adicionado Galeria em formato de carrossel
