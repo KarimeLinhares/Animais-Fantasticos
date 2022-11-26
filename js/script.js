@@ -7,6 +7,7 @@ import AnimeScroll from "./modules/anime-scroll.js";
 import DropdownMenu from "./modules/dropdown-menu.js";
 import MenuMobile from "./modules/menu-mobile.js";
 import Schedule from "./modules/schedules.js";
+import SlideNav from './modules/slide.js';
 
 import initFetchAnimais from './modules/fetch-animais.js';
 import initFetchBitcoin from './modules/fetch-bitcoins.js';
@@ -49,9 +50,16 @@ const funcionamento = new Schedule('[data-semana]', 'aberto');
 console.log(funcionamento);
 funcionamento.init();
 
-
-
 initFetchAnimais();
 initFetchBitcoin();
+
+// inicializa o carrossel
+const slide = new SlideNav('.slide', '.slide-wrapper');
+slide.init();
+slide.addArrow('.prev', '.next');
+
+// adiciona o controle customizado
+slide.addControl('.custom-controls');
+
 
 
