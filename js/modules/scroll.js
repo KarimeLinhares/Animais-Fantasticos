@@ -20,17 +20,17 @@ export default class Scroll {
     this.scrollToSection = this.scrollToSection.bind(this);
   }
 
-  // método que linka o item do navegador com a sua seção(3)
+  // método que linka o item do navegador com a sua seção
   scrollToSection(event) {
     event.preventDefault();
     const href = event.currentTarget.getAttribute('href'); // pega o atributo do href
     const section = document.querySelector(href);
 
-    // faz o movimento de scroll do item para a seção(4)
+    // faz o movimento de scroll do item para a seção
     section.scrollIntoView(this.options);
   }
 
-  // loop que adiciona para cada link um evento de 'click'(2)
+  // loop que adiciona para cada link um evento de 'click'
   addLinkEvent() {
     this.innerLinks.forEach((link) => {
       link.addEventListener('click', this.scrollToSection);

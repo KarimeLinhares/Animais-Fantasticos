@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 import outsideClick from "./outside-click.js";
 
 export default class MenuMobile {
@@ -15,6 +16,7 @@ export default class MenuMobile {
   }
   
   openMenu() {
+    event.preventDefault();
     // adiciona a classe ativa 
     this.menuList.classList.add(this.activeClass);
     this.menuButton.classList.add(this.activeClass);
@@ -36,5 +38,4 @@ export default class MenuMobile {
     }
     return this;
   }
-
 }

@@ -50,3 +50,11 @@
   border-right: 10px solid transparent;
   border-bottom: 10px solid #5C2E7E;
 }
+
+/* deixa o submenu já ativado quando menor de 700 pixels */
+@media (max-width: 700px) {
+  [data-dropdown] .dropdown-menu {
+    display: block;
+    animation: show-up .3s forwards;
+  }
+}

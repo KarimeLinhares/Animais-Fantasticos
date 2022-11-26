@@ -22,7 +22,7 @@ export default class Tooltip {
 
   // Remove a tooltip e os eventos de mousemove e mouseleave
   onMouseLeave({ currentTarget }) {    
-    // consegue com que a tooltip seja removida, mesmo ele não estando dentro da função(5)
+    // consegue com que a tooltip seja removida, mesmo ele não estando dentro da função
     this.tooltipBox.remove();
 
     // remove a lista de eventos(6)
@@ -30,7 +30,7 @@ export default class Tooltip {
     currentTarget.removeEventListener('mousemove', this.onMouseMove);
   }
   
-  // função que cria uma nova 'div', com uma uma nova classe, e o texto do aria-label(3)
+  // função que cria uma nova 'div', com uma uma nova classe, e o texto do aria-label
   // Ela é adicionada ao final do documento
   criarTooltipBox(element) {
     const tooltipBox = document.createElement('div');

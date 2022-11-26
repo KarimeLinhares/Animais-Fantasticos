@@ -8,10 +8,8 @@ import DropdownMenu from "./modules/dropdown-menu.js";
 import MenuMobile from "./modules/menu-mobile.js";
 import Schedule from "./modules/schedules.js";
 import SlideNav from './modules/slide.js';
-
-import initFetchAnimais from './modules/fetch-animais.js';
-import initFetchBitcoin from './modules/fetch-bitcoins.js';
-
+import FetchAnimais from './modules/fetch-animais.js';
+import FetchBitcoin from './modules/fetch-bitcoins.js';
 
 // inicializa o scroll
 const scroll = new Scroll ('[data-menu="suave"] a[href^="#"]');
@@ -50,8 +48,11 @@ const funcionamento = new Schedule('[data-semana]', 'aberto');
 console.log(funcionamento);
 funcionamento.init();
 
-initFetchAnimais();
-initFetchBitcoin();
+// inicializa a api interna e o número de animais
+FetchAnimais('./animaisapi.json', '.numeros-grid');
+
+// inicializa a api externa
+FetchBitcoin('https://blockchain.info/ticker', '.coffee');
 
 // inicializa o carrossel
 const slide = new SlideNav('.slide', '.slide-wrapper');

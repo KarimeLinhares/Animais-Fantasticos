@@ -65,6 +65,15 @@ body {
   margin-left: 5px;
 }
 
+/* SVG */
+.arrow-black {
+  background: url('../img/arrow-black.svg') no-repeat center center;
+  display: inline-block;
+  width: 8px;
+  height: 10px;
+}
+
+
 
 /* ARRANJO DE COLUNAS */
 
@@ -292,14 +301,20 @@ body {
 
 /* adiciona as setas dos tópicos */
 [data-anime="accordion"] dt::after {
-  content: '▼';
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: url('../img/arrow-black.svg') no-repeat center center;
   margin-left: 10px;
+  transform: rotate(90deg);
+  transition: transform .3s;
 }
 
 /* muda a seta para cima quando a classe 'active' for adicionada */
 [data-anime="accordion"] dt.active::after {
-  content: '▲';
-  margin-left: 10px;
+  content: '';
+  transform: rotate(-90deg);
 }
 
 /* mostra as descrições quando a classe 'active' for adicionada */
@@ -380,7 +395,7 @@ body {
 
   /* diminui o h1 */
   .grid-section h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   /* tira o margin-top do topo */
@@ -391,5 +406,9 @@ body {
   /* tira o margin-bottom do footer */
   .copy {
     margin-bottom: 0px;
+  }
+
+  .faq-lista dt {
+    font-size: 1rem;
   }
 }
